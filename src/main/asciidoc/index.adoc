@@ -1,0 +1,63 @@
+= Kardex Api
+
+Documentacion de los metodos expuesto por la Api
+
+== Post /Login
+Devuleve token de seguridad para consumir los demas endpoints
+
+=== Request
+
+.Request Body:
+include::{snippets}/login/request-fields.adoc[]
+
+=== Response
+
+.Response fields:
+include::{snippets}/login/response-fields.adoc[]
+
+=== Examples
+
+.Curl Request:
+include::{snippets}/login/curl-request.adoc[]
+
+.HTTP Request:
+include::{snippets}/items/http-request.adoc[]
+
+.HTTP Response:
+include::{snippets}/login/http-response.adoc[]
+
+[%hardbreaks]
+
+== Get /Items
+Devuelve todos los Articulos
+----
+Accesible para Roles:
+ EMPLEADO
+ CLIENTE
+----
+
+=== Request
+
+.Request Header:
+include::{snippets}/items/request-headers.adoc[]
+
+.Request Body:
+include::{snippets}/items/request-body.adoc[]
+
+=== Response
+
+.Response fields:
+include::{snippets}/items/response-fields.adoc[]
+
+=== Examples
+
+.Curl Request:
+include::{snippets}/items/curl-request.adoc[]
+
+.HTTP Request:
+include::{snippets}/items/http-request.adoc[]
+
+.HTTP Response:
+include::{snippets}/items/http-response.adoc[]
+
+[%hardbreaks]
