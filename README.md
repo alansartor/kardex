@@ -1,4 +1,3 @@
-<title>Kardex Api</title>
 <body class="book">
 <div id="header">
 <h1>Kardex Api</h1>
