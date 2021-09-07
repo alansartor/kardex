@@ -7,11 +7,47 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>Documentacion de los metodos expuesto por la Api</p>
+<h2>Endpoints</h2>
+<ul>
+  <li><a href="#_post_login">POST /login</a></li>
+  <li><a href="#_get_items">GET /items</a></li>
+  <li>POST /entrada</li>
+  <li>POST /salida</li>
+  <li>GET /stocks</li>
+  <li>GET /stocks/{itemCodigo}</li>
+</ul>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Datos de prueba:</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Username</th>
+<th class="tableblock halign-left valign-top">Password</th>
+<th class="tableblock halign-left valign-top">Rol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>empleado</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>123456</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EMPLEADO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cliente</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>123456</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CLIENTE</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_post_login">Post /Login</h2>
+<h2 id="_post_login">POST /login</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Devuleve token de seguridad para consumir los demas endpoints</p>
@@ -114,7 +150,7 @@ Content-Length: 209
 </div>
 </div>
 <div class="sect1">
-<h2 id="_get_items">Get /Items</h2>
+<h2 id="_get_items">GET /items</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Devuelve todos los Articulos</p>
