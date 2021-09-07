@@ -2,7 +2,7 @@
 
 Documentacion de los metodos expuesto por la Api
 
-== Post /Login
+== POST /login
 Devuleve token de seguridad para consumir los demas endpoints
 
 === Request
@@ -28,7 +28,7 @@ include::{snippets}/login/http-response.adoc[]
 
 [%hardbreaks]
 
-== Get /Items
+== GET /items
 Devuelve todos los Articulos
 ----
 Accesible para Roles:
