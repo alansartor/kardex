@@ -7,6 +7,7 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>Documentacion de los metodos expuesto por la Api</p>
+<p>(IDE: Eclipse - Import as Existing Maven Projects)</p>
 <h2>Endpoints</h2>
 <ul>
   <li><a href="#_post_login">POST /login</a></li>
