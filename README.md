@@ -11,8 +11,8 @@
 <ul>
   <li><a href="#_post_login">POST /login</a></li>
   <li><a href="#_get_items">GET /items</a></li>
-  <li>POST /entrada</li>
-  <li>POST /salida</li>
+  <li><a href="#_post_entrada">POST /entrada</a></li>
+  <li><a href="#_post_salida">POST /salida</a></li>
   <li>GET /stocks</li>
   <li>GET /stocks/{itemCodigo}</li>
 </ul>
@@ -145,6 +145,44 @@ Content-Length: 209
 
 {"status":200,"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlbXBsZWFkbyIsInJvbCI6IlJPTEVfRU1QTEVBRE8iLCJleHAiOjE2MzA5ODEwMTV9.cQeVkRNSAPRR85nRthHGy2oTg96CubOIUFW-mvHEk0LquN8-H0i3Q-HSHfjsIOd51ccyZ0hWnYcA3YNz6ph07w"}</code></pre>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_post_entrada">POST /entrada</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Registra ingreso de articulos al stock (solo puede ser ejecutado por usuario con rol EMPLEADO)</p>
+</div>
+<h3 id="_examples">Examples</h3>
+<div class="listingblock">
+<div class="title">Curl Request:</div>
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/entrada' -i -X POST \
+    -H 'Content-Type: application/json;charset=UTF-8' \
+    -H 'Accept: application/json' \
+	-H 'Authorization: Bearer Token...' \
+    -d '{"itemCodigo": "CAM_0001","valorUnitario": 134 ,"cantidad": 18}'</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_post_salida">POST /salida</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Registra salida de articulos del stock (solo puede ser ejecutado por usuario con rol CLIENTE)</p>
+</div>
+<h3 id="_examples">Examples</h3>
+<div class="listingblock">
+<div class="title">Curl Request:</div>
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'http://localhost:8080/salida' -i -X POST \
+    -H 'Content-Type: application/json;charset=UTF-8' \
+    -H 'Accept: application/json' \
+	-H 'Authorization: Bearer Token...' \
+    -d '{"itemCodigo": "CAM_0001","valorUnitario": 134 ,"cantidad": 18}'</code></pre>
 </div>
 </div>
 </div>
